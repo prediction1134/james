@@ -48,4 +48,128 @@
 
         /* Container modified for Full Screen feel */
         .container {
-            background: rgba(255, 255, 255, 0
+            background: rgba(255, 255, 255, 0.05); /* Lighter background */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 60px 20px;
+            text-align: center;
+            width: 100vw; /* Full Viewport Width */
+            min-height: 100vh; /* Full Viewport Height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: none; /* Side borders removed */
+            box-shadow: none;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #0088cc;
+            margin-bottom: 25px;
+            object-fit: cover;
+            box-shadow: 0 0 30px rgba(0, 136, 204, 0.5);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #fff;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+
+        .tagline {
+            font-size: 20px;
+            color: #ffd700; 
+            margin-bottom: 20px;
+            font-weight: bold;
+            line-height: 1.4;
+            max-width: 90%;
+        }
+
+        .promise {
+            font-size: 18px;
+            background: rgba(255, 75, 43, 0.2);
+            padding: 15px 25px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border-left: 6px solid #ff4b2b;
+            color: #ffffff;
+            max-width: 90%;
+        }
+
+        /* Blinking Button */
+        .btn {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 18px 45px;
+            border-radius: 50px;
+            font-size: 22px;
+            font-weight: 800;
+            transition: all 0.3s ease;
+            animation: blinkColors 1.5s infinite;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @keyframes blinkColors {
+            0% { background: #0088cc; box-shadow: 0 0 20px #0088cc; }
+            50% { background: #28a745; box-shadow: 0 0 20px #28a745; }
+            100% { background: #0088cc; box-shadow: 0 0 20px #0088cc; }
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
+        .setup-by {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .setup-by span {
+            color: #00c6ff;
+            font-weight: bold;
+        }
+
+        /* Responsive adjustments for very small screens */
+        @media (max-width: 380px) {
+            h1 { font-size: 26px; }
+            .tagline { font-size: 16px; }
+            .btn { font-size: 18px; padding: 15px 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/prediction1134/james/f9d6117c3e729478e2b9245131210fd9be7d1cfa/jamess.jpg" alt="James Bhai Logo" class="profile-pic">
+        
+        <h1>James Bhai Prediction</h1>
+
+        <p class="tagline">
+            🎯 Toss, Match Prediction & Session Prediction 🔥
+        </p>
+
+        <div class="promise">
+            🎯 MATCH Mein Iss Baar Mota Paisa Kamaoge Zaban Hai 🔥
+        </div>
+
+        <a href="https://t.me/+3qFJvDLUjvBlYmQ1" class="btn">
+            <i class="fab fa-telegram-plane"></i> Join Telegram Now
+        </a>
+    </div>
+
+    <div class="setup-by">
+        Set-up By - <span>@AdDukan1</span>
+    </div>
+
+</body>
+</html>
